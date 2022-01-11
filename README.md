@@ -10,9 +10,7 @@ Normally React states derived from props does not update when props is changed. 
 const Person = (props) => {
   const [name, setName] = useState(`Mr. ${props.name}`);
 
-  return (
-    <div>Hello {name}</div>
-  );
+  return <div>Hello {name}</div>;
 };
 ```
 
@@ -25,14 +23,14 @@ As stated in [this StackOverflow answer](https://stackoverflow.com/a/54626764/11
 ## Usage:
 
 ```jsx
-import {useDerivedState} from '@glinda93/use-derived-state';
+import { useDerivedState } from "@glinda93/use-derived-state";
 
 const Person = (props) => {
-  const [name, setName] = useDerivedState(props.name, propsName => `Mr. ${propsName}`);
-
-  return (
-    <div>Hello {name}</div>
+  const [name, setName] = useDerivedState(
+    props.name,
+    (propsName) => `Mr. ${propsName}`
   );
-};
 
+  return <div>Hello {name}</div>;
+};
 ```
