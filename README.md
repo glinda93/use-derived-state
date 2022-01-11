@@ -1,3 +1,5 @@
+![CI status](https://github.com/glinda93/use-derived-state/actions/workflows/main.yml/badge.svg)
+
 # use-derived-state
 
 Custom React hooks for derived state.
