@@ -33,11 +33,10 @@ npm i @glinda93/use-derived-state
 ```jsx
 import { useDerivedState } from "@glinda93/use-derived-state";
 
+const mapper = (propsName) => `Mr. ${propsName}`;
+
 const Person = (props) => {
-  const [name, setName] = useDerivedState(
-    props.name,
-    (propsName) => `Mr. ${propsName}`
-  );
+  const [name, setName] = useDerivedState(props.name, mapper);
 
   return <div>Hello {name}</div>;
 };
