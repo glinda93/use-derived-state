@@ -22,7 +22,13 @@ As stated in [this StackOverflow answer](https://stackoverflow.com/a/54626764/11
 
 > `useState` hooks function argument is being used only once and not everytime the prop changes. You must make use of `useEffect` hooks to implement what you would call the `componentWillReceiveProps`/`getDerivedStateFromProps` functionality
 
-## Usage:
+## Installation
+
+```
+npm i @glinda93/use-derived-state
+```
+
+## Usage
 
 ```jsx
 import { useDerivedState } from "@glinda93/use-derived-state";
