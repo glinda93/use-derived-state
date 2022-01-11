@@ -12,7 +12,7 @@
   ],
   "types": "dist/index.d.ts",
   "scripts": {
-    "prettier:fix": "prettier .",
+    "prettier:fix": "prettier . --write",
     "prettier:check": "prettier . -c",
     "lint:fix": "eslint src/* --fix",
     "lint:check": "eslint src/*",
