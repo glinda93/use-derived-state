@@ -1,4 +1,5 @@
 dist
 node_modules
-.eslintrc.js
-rollup.config.js
+/*.*rc.js
+/*.config.js
+test
